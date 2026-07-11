@@ -1,1 +1,25 @@
-# McFarland_etal_2021
+# McFarland et al. 2021 — multi-tissue mouse NK & ILC1 (re-analysis)
+
+Re-analysis of the publicly available single-cell dataset from:
+
+> **McFarland AP, Yalin A, Wang S-Y, et al. Multi-tissue single-cell analysis deconstructs the complex programs of mouse natural killer and type 1 innate lymphoid cells in tissues and circulation.**  
+> *Cell Reports* 2021. https://doi.org/10.1016/j.celrep.2021.109559  
+> Data: GEO: GSE158547
+
+## Dataset at a glance
+- **System:** Mouse NK cells and ILC1 across multiple tissues and circulation
+- **Assay:** 10x Genomics scRNA-seq
+- **Accession / source:** GEO: GSE158547
+
+## What this repository does
+Preprocesses the multi-tissue mouse NK/ILC1 scRNA-seq dataset (GSE158547) into a Seurat object for tissue-resident vs circulating NK/ILC1 comparison. See `R/01_McFarland_Pre_processing.Rmd`.
+
+## Repository structure
+- `R/` — analysis pipeline (numbered `.Rmd` scripts run in order)
+- `Setup.R` / `Load_packages.R` — environment setup and package loading
+- Large data objects are **not** tracked in Git — download from the source above.
+- `renv.lock` — pinned package versions for reproducibility (`renv::restore()`).
+
+---
+Part of my NK / T-cell single-cell research programme — see my [GitHub profile](https://github.com/Eomesodermin) and [dilloncorvino.com](https://dilloncorvino.com).  
+Author: **Dillon Corvino**
